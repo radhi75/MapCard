@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="overlay">
+      <img src="./Card1.png" alt="404" />
+    </div>
+
+    <div class="popup" onclick="myFunction()">
+      GOMYCODE TUNIS
+      <span class="popuptext" id="myPopup">
+        <p>NPS</p>
+        <p>capacité</p>
+        <p>nombre des instruteurs</p>
+        <p>taux de succes</p>
+      </span>
+    </div>
+    <div class="popup2" onclick="myFunction2()">
+      GOMYCODE LAC
+      <span class="popuptext" id="myPopup2">Lac</span>
+    </div>
+    <div class="popup3" onclick="myFunction3()">
+      GOMYCODE Menzah5
+      <span class="popuptext" id="myPopup3">Menzah5</span>
+    </div>
+    <script>
+      // When the user clicks on div, open the popup
+      function myFunction() {
+        var popup = document.getElementById("myPopup");
+        popup.classList.toggle("show");
+      }
+      function myFunction2() {
+        var popup = document.getElementById("myPopup2");
+        popup.classList.toggle("show");
+      }
+      function myFunction3() {
+        var popup = document.getElementById("myPopup3");
+        popup.classList.toggle("show");
+      }
+    </script>
+  </body>
+</html>
